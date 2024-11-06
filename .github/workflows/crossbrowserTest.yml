@@ -17,3 +17,5 @@ jobs:
       - name: run docker-compose
         run: docker compose up -d e2e-chrome e2e-firefox
 
+      - name: wait for services to start
+        run: docker compose logs -f
