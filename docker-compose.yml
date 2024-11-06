@@ -2,10 +2,10 @@ version: '3.8'
 
 services:
   e2e-chrome:
-    build:
+    build: .
     command: "-b chrome"
   
   e2e-firefox:
-    build:
+    build: .
     command: "-b firefox -c video=false"
   
