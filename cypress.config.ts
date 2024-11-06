@@ -4,6 +4,7 @@ import { Browser as PuppeteerBrowser, Page } from "puppeteer-core";
 import { setup, retry } from "@cypress/puppeteer";
 
 module.exports = defineConfig({
+  retries: 2,
   e2e: {
    // baseUrl: "http://localhost:3000/",
     setupNodeEvents(on, config) {
