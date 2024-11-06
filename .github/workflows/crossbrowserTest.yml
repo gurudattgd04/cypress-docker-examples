@@ -15,5 +15,5 @@ jobs:
         uses: actions/checkout@v3
 
       - name: run docker-compose
-        run: docker-compose up -d e2e-chrome e2e-firefox
+        run: docker compose up -d e2e-chrome e2e-firefox
 
